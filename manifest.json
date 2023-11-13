@@ -1,27 +1,33 @@
 {
-    "name": "Câmera",
-    "short_name": "Câmera",
+    "name": "camera",
+    "short_name": "pc",
     "icons": [
         {
-            "src": "images/icon-256.png",
+            "src": "images/camera_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "images/camera_256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "images/icon-512.png",
+            "src": "images/camera_512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "images/icon-256.png",
+            "src": "images/camera_64.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "maskable"
         }
     ],
-        "lang": "pt-BR",
-        "theme_color": "#6E8658",
-        "background_color": "#D0D5CE",
-        "display": "standalone",
-        "start_url": "/index.html"
+    "lang": "pt-BR",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
 }
+
