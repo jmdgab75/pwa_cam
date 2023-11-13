@@ -44,3 +44,14 @@ cameraTrigger.onclick = function () {
 };
 // carrega imagem de camera quando a janela carregar
 window.addEventListener("load", cameraStart, false);
+
+// Adicionando um listener para o botão de inverter a câmera
+const cameraFlipButton = document.querySelector("#camera--flip");
+cameraFlipButton.addEventListener("click", toggleCameraFacingMode);
+
+// Função para inverter a posição da câmera
+function toggleCameraFacingMode() {
+  constraints.video.facingMode = constraints.video.facingMode === "user" ? "environment" : "user";
+  // Reinicia a câmera para aplicar as novas configurações
+  cameraStart();
+}
